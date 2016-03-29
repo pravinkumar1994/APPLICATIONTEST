@@ -15,7 +15,7 @@ class ViewController1: UIViewController,UICollectionViewDataSource,UICollectionV
      var selectedindex: Int = Int ()
     override func viewDidLoad() {
         super.viewDidLoad()
-Collection.delegate = self
+//Collection.delegate = self
         // Do any additional setup after loading the view.
     }
 
