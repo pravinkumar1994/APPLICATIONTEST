@@ -27,7 +27,7 @@ class ViewController: UIViewController,UIAlertViewDelegate{
         return elements.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: TableViewCell = tableView.dequeueReusableCellWithIdentifier("cell1", forIndexPath: indexPath) as! TableViewCell
+//        let cell: TableViewCell = tableView.dequeueReusableCellWithIdentifier("cell1", forIndexPath: indexPath) as! TableViewCell
         cell.lb1.text = elements.objectAtIndex(indexPath.row) as! String
         return cell
     }

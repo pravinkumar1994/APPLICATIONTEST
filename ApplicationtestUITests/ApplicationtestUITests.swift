@@ -8,6 +8,51 @@
 
 import XCTest
 
+
+let app2 = app
+let tablesQuery = app2.tables
+let bananaStaticText = tablesQuery.staticTexts["Banana"]
+bananaStaticText.tap()
+
+let app = app2
+app.buttons["Say Hello"].tap()
+
+let okButton = app2.alerts["Alert"].collectionViews.buttons["OK"]
+okButton.tap()
+app.childrenMatchingType(.Other).element.childrenMatchingType(.Other).elementBoundByIndex(1).tap()
+okButton.tap()
+
+let showElementsButton = app.buttons["Show Elements"]
+showElementsButton.tap()
+
+let showImageButton = app.buttons["Show image"]
+showImageButton.tap()
+app2.collectionViews.images["Food3.jpeg"].tap()
+
+let backButton = app.navigationBars["Applicationtest.View"].childrenMatchingType(.Button).matchingIdentifier("Back").elementBoundByIndex(0)
+backButton.tap()
+backButton.tap()
+
+let carrotStaticText = tablesQuery.staticTexts["Carrot"]
+carrotStaticText.tap()
+bananaStaticText.tap()
+
+let appleStaticText = tablesQuery.staticTexts["Apple"]
+appleStaticText.tap()
+bananaStaticText.tap()
+carrotStaticText.tap()
+showImageButton.tap()
+backButton.tap()
+showImageButton.tap()
+backButton.tap()
+showElementsButton.tap()
+bananaStaticText.tap()
+appleStaticText.tap()
+bananaStaticText.tap()
+showImageButton.tap()
+backButton.tap()
+carrotStaticText.tap()
+
 class ApplicationtestUITests: XCTestCase {
         
     override func setUp() {
